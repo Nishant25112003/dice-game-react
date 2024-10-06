@@ -1,0 +1,173 @@
+.start-game{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding: 10px 20px;
+    gap: 30px;
+    box-sizing: border-box;
+
+}
+@media (max-width: 973px) { /* Adjust the width as needed */
+    .start-game{
+      
+        height: fit-content;
+       
+    }
+}.score{
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height:fit-content ;
+    width: 100%;
+    padding: 20px 120px; /* Adds spacing inside the div on both left and right */
+    box-sizing: border-box; /* Ensures padding doesn’t affect the width */
+}@media (max-width: 973px) { /* Adjust the width as needed */
+    .score {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center align cards */
+        padding-top: 100px;
+        gap: 40px;
+    }
+}
+.start-game-score-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 52px;
+}
+
+.value{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 8rem;
+line-height: 39px;
+color: #000000;
+}
+.dices-div-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 32px;
+    align-items: end;
+}
+@media (max-width: 973px) { /* Adjust the width as needed */
+    .dices-div-main {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center align cards */
+        padding-top: 20px;
+    }
+}
+.total-score, .select-number, .instructions > p, .reset-button, .rate-button{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 39px;
+color: #000000;
+}
+.dices-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px
+}
+@media (max-width: 973px) { /* Adjust the width as needed */
+    .dices-div {
+        align-items: center; /* Center align cards */
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+}
+.dice-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+   
+}
+.dice.selected{
+    transform: scale(1.2); /* Slightly increase size on click */
+    transition: transform 0.2s ease;
+}
+.dice{
+    height: 80px;
+}
+.select-number{
+    font-size: 28px;
+}
+
+.randomDice, .instructions, .reset-btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    gap: 20px;
+    padding: 10px 20px;
+}
+.randomDice{
+    padding-bottom: 30px;
+}
+.randomDice > img{
+    height: 300px;
+}
+@media (max-width: 973px) { /* Adjust the width as needed */
+    .randomDice > img {
+        height: 200px;
+    }
+}
+.reset-btns{
+    gap: 28px;
+}
+.instructions > p{
+    font-size: 28px;
+    padding-top: 10px;
+    text-align: center;
+    line-height: 18px;
+    min-height: fit-content;
+}
+.reset-btns {
+    margin-top: 10px;
+}
+
+.reset-btns > .reset-button,
+.rate-button {
+    font-size: 20px;
+    min-width: 200px;
+    padding: 10px 40px;
+    border: 4px solid #000000;
+    box-shadow: 4px 4px 0px #000000, 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.reset-btns > .reset-button {
+    background: #C7B9FF;
+}
+
+.rate-button {
+    background: #ffffff;
+}
+
+/* Hover effect for reset button */
+.reset-btns > .reset-button:hover {
+    background-color: #B59EFF; /* Darker shade of purple */
+    box-shadow: 8px 8px 0px #000000, 0px 6px 6px rgba(0, 0, 0, 0.25); /* Shadow gets larger */
+    transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+/* Hover effect for rate button */
+.rate-button:hover {
+    background-color: #F0F0F0; /* Light gray background */
+    box-shadow: 8px 8px 0px #000000, 0px 6px 6px rgba(0, 0, 0, 0.25); /* Shadow gets larger */
+    transform: scale(1.05); /* Slightly enlarges on hover */
+}
